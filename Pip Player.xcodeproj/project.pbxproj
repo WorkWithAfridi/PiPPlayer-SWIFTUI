@@ -9,18 +9,23 @@
 /* Begin PBXBuildFile section */
 		EF1DB94A2B940D200052CF0A /* Pip_PlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DB9492B940D200052CF0A /* Pip_PlayerApp.swift */; };
 		EF1DB94C2B940D200052CF0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DB94B2B940D200052CF0A /* ContentView.swift */; };
-		EF1DB94E2B940D200052CF0A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DB94D2B940D200052CF0A /* Item.swift */; };
 		EF1DB9502B940D220052CF0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1DB94F2B940D220052CF0A /* Assets.xcassets */; };
 		EF1DB9532B940D220052CF0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1DB9522B940D220052CF0A /* Preview Assets.xcassets */; };
+		EF1DB95A2B940E340052CF0A /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DB9592B940E340052CF0A /* PlayerView.swift */; };
+		EF1DB9652B94346E0052CF0A /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DB9642B94346E0052CF0A /* PlayerController.swift */; };
+		EF1DB9682B94390E0052CF0A /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DB9672B94390E0052CF0A /* VideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF1DB9462B940D200052CF0A /* Pip Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pip Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1DB9492B940D200052CF0A /* Pip_PlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pip_PlayerApp.swift; sourceTree = "<group>"; };
 		EF1DB94B2B940D200052CF0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		EF1DB94D2B940D200052CF0A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EF1DB94F2B940D220052CF0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF1DB9522B940D220052CF0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF1DB9592B940E340052CF0A /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		EF1DB9622B9417CF0052CF0A /* Pip-Player-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Pip-Player-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EF1DB9642B94346E0052CF0A /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		EF1DB9672B94390E0052CF0A /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +58,11 @@
 		EF1DB9482B940D200052CF0A /* Pip Player */ = {
 			isa = PBXGroup;
 			children = (
+				EF1DB9622B9417CF0052CF0A /* Pip-Player-Info.plist */,
+				EF1DB95D2B9411A40052CF0A /* VideoPlayer */,
 				EF1DB9492B940D200052CF0A /* Pip_PlayerApp.swift */,
+				EF1DB9592B940E340052CF0A /* PlayerView.swift */,
 				EF1DB94B2B940D200052CF0A /* ContentView.swift */,
-				EF1DB94D2B940D200052CF0A /* Item.swift */,
 				EF1DB94F2B940D220052CF0A /* Assets.xcassets */,
 				EF1DB9512B940D220052CF0A /* Preview Content */,
 			);
@@ -68,6 +75,31 @@
 				EF1DB9522B940D220052CF0A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF1DB95D2B9411A40052CF0A /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				EF1DB9662B9438FB0052CF0A /* view */,
+				EF1DB9632B942C380052CF0A /* controller */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		EF1DB9632B942C380052CF0A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF1DB9642B94346E0052CF0A /* PlayerController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		EF1DB9662B9438FB0052CF0A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EF1DB9672B94390E0052CF0A /* VideoPlayer.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +173,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF1DB94C2B940D200052CF0A /* ContentView.swift in Sources */,
-				EF1DB94E2B940D200052CF0A /* Item.swift in Sources */,
+				EF1DB95A2B940E340052CF0A /* PlayerView.swift in Sources */,
+				EF1DB9682B94390E0052CF0A /* VideoPlayer.swift in Sources */,
+				EF1DB9652B94346E0052CF0A /* PlayerController.swift in Sources */,
 				EF1DB94A2B940D200052CF0A /* Pip_PlayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +313,7 @@
 				DEVELOPMENT_TEAM = 922L4HAC7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pip-Player-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -308,6 +343,7 @@
 				DEVELOPMENT_TEAM = 922L4HAC7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pip-Player-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
